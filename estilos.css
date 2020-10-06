@@ -1,0 +1,130 @@
+/*
+AUTOR: VERÓNICA HENRÍQUEZ VEGA
+CORREO: VEROH101@GMAIL.COM
+- VINCULOS Y COLORES DE FONDO FOOTER : #3B2211;
+- COLOR DE TEXTO : #707070;
+*/
+
+html * { 
+	margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+   }
+
+/*----------------------------- INICIO PROPIEDADES GENERALES-----------------------------------*/
+
+body{
+	font-family:Arial, Helvetica, sans-serif;/*FUENTES*/
+	font-size: 15px; /*TAMAÑO BASE*/
+	color: #707070; /*COLOR BASE*/
+}
+
+h1 {
+	font-size: 2em; /*2x15=30px*/
+}
+
+h2{
+	font-size: 1.5em; /*1.5x15=22.5px*/
+}
+
+h3{
+	font-size: 1em; /*1x15=15px*/
+}
+p{  line-height: 2em;}
+
+/*PSEUDO CLASES*/
+
+a:link{ color:#3b2211;  } /*ESTADO REPOSO*/
+
+a:hover{color: #de820f;  } /*ESTADO SOBRE*/
+
+/*----------------------------- FIN PROPIEDADES GENERALES-----------------------------------*/
+
+
+.cabecera {
+    /*PROPIEDADES-COORDENADA: GROSOR COLOR TIPO (DOTTED,DOUBLE)*/
+    border-top: 10px #3b2211 solid;
+    padding-top:2%;
+    padding-bottom: 2%; 
+    background-color: #fff;
+  }
+  
+#logotipo {float: left;} /*ESTILO ÚNICO COMO X EJEMPLO LOGOTIPPO*/
+
+.navbar {float: right;} /*ESTILO PARA BARRA DE NAVEGACIÓN*/
+
+/*SELECTOR PADRE(CONTENEDOR)  SELECTOR HIJO (ANIDADO)*/
+.navbar li {
+    display: inline-block; /*EL ELEMENTO SE TRANSFORMA EN BLOQUE*/;
+    list-style: none; /*QUITA VIÑETAS*/
+    }
+
+.navbar a {
+    display: block; /*LA ETIQUETA SE TRANSFORMA EN BLOQUE*/
+    padding: 10px; /*AL SER BLOQUE SE APLICA EL RELLENO*/
+    text-decoration: none; /*QUITA SUBRAYADO DE A*/
+    }
+
+.navbar a:hover {
+    background-color:#3b2211;
+    color:#fff;
+    }
+
+.titulo_principal {
+    text-align: center;
+    border-bottom: 2px #cccccc dotted;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    }
+
+.pie {background-color: #3b2211;
+    color: #fff;
+    text-align: center ;
+    padding: 3%
+    }
+
+.restorant {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 5% 10% ;
+    width: auto;
+    }
+
+.carta {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    }
+    
+.banner {
+    background-image: url(../img/banner.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    }
+
+.clearfix {
+    clear: both; /*CLASE PARA CORREGIR PROBLEMAS DE FLOTACIÓN*/
+    } 
+
+.img-responsiva {
+    width: 100%; /*AJUSTA IMAGEN AL ANCHO DEL CONTENEDOR*/
+    height: auto; /*PROPORCIÓN ALTO*/
+    max-width: 540px; /*ANCHO MÁXIMO*/
+    margin-bottom: 1em
+    }
+
+.contenedor {
+    margin: auto;
+    max-width: 576px
+    }
+
+.contenedorfooter {
+    background-color: #3b2211;
+    color: #fff;
+    padding: 3%;
+    margin: auto;
+    max-width: 1550px
+    }
+
+.hr {width: 33.5em;}
+    
